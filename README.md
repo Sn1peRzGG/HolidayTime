@@ -2,7 +2,7 @@
 
 ##### P.S.: All used links:
 
-Link to this website (GitHub Pages):
+Link to this website (GitHub Pages): https://sn1perzgg.github.io/HolidayTime/
 
 - [Slider by goldigo](https://codepen.io/goldigo/pen/YzXogYR)
 - [Dropdowns by Cody Pearce](https://codepen.io/codypearce/pen/PdBXpj)
