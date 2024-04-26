@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/site.webmanifest" />
+		<title>HolidayTime</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="./img/logo.png" alt="Logo" class="logo" />
+				<div>
+					<nav class="nav">
+						<div class="nav-links">
+							<ul class="nav-items">
+								<li class="nav-item"><a href="./">ГОЛОВНА</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./about.html">ПРО НАС</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./reserve.html">ЗАБРОНЮВАТИ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./contacts.html">КОНТАКТИ</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./profile.html">ОСОБИСТИЙ<br />КАБІНЕТ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="language-switcher dropdown dropdown-5">
+						<img
+							src="./img/globe.png"
+							alt="Language Icon"
+							class="language-icon"
+						/>
+						<span class="language-text">UA</span>
+						<ul class="dropdown_menu dropdown_menu-5">
+							<li class="dropdown_item-1 active">UA</li>
+							<li class="dropdown_item-2">RU</li>
+							<li class="dropdown_item-3">EN</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<h1 class="page-title">Контакти</h1>
+			<main class="main-content">
+				<section class="contact-info">
+					<div class="contact-row">
+						<div class="contact-col">
+							<div class="contact-item">
+								<div class="contact-label label">Телефон</div>
+								<!-- <div class="contact-underline" aria-hidden="true"></div> -->
+								<div class="contact-value value">+38(097)119-89-83</div>
+							</div>
+						</div>
+						<div class="contact-col">
+							<div class="contact-hours">
+								<div class="contact-hours-label label">Графік роботи</div>
+								<!-- <div class="contact-underline" aria-hidden="true"></div> -->
+								<div class="contact-hours-value value">
+									пн-пт 08:00-22:00<br />
+									сб 09:00-21:00<br />
+									вс 10:00-20:00
+								</div>
+							</div>
+						</div>
+						<div class="contact-col">
+							<div class="contact-email">
+								<div class="contact-email-label label">Ел. пошта</div>
+								<!-- <div class="contact-underline" aria-hidden="true"></div> -->
+								<div class="contact-email-value value">hello@gmail.com</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="contact-address">
+					<div class="contact-address-row">
+						<div class="contact-col">
+							<div class="contact-address-col">
+								<div class="contact-address-label label">Адреса офісу</div>
+								<!-- <div class="contact-underline" aria-hidden="true"></div> -->
+								<div class="contact-address-value value">
+									м. Київ, вул. Малевича, буд. 4
+								</div>
+							</div>
+						</div>
+						<div class="contact-col">
+							<img
+								src="./img/map.png"
+								alt="Map showing office location"
+								class="contact-map"
+							/>
+						</div>
+					</div>
+				</section>
+				<div class="scroll-to-top" onclick="scrollToTop()">
+					<img
+						src="./img/top_arrow.png"
+						alt="Top Arrow"
+						class="scroll-to-top-btn"
+					/>
+				</div>
+			</main>
+
+			<footer class="footer">
+				&copy; 2021 HolidayTime. All rights reserved.
+			</footer>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

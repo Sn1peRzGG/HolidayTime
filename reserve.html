@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/site.webmanifest" />
+		<title>HolidayTime</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="./img/logo.png" alt="Logo" class="logo" />
+				<div>
+					<nav class="nav">
+						<div class="nav-links">
+							<ul class="nav-items">
+								<li class="nav-item"><a href="./">ГОЛОВНА</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./about.html">ПРО НАС</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./reserve.html">ЗАБРОНЮВАТИ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./contacts.html">КОНТАКТИ</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./profile.html">ОСОБИСТИЙ<br />КАБІНЕТ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="language-switcher dropdown dropdown-5">
+						<img
+							src="./img/globe.png"
+							alt="Language Icon"
+							class="language-icon"
+						/>
+						<span class="language-text">UA</span>
+						<ul class="dropdown_menu dropdown_menu-5">
+							<li class="dropdown_item-1 active">UA</li>
+							<li class="dropdown_item-2">RU</li>
+							<li class="dropdown_item-3">EN</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<h1 class="page-title">Забронювати будиночок</h1>
+			<main class="main-content">
+				<div class="location-selector dropdown dropdown-5">
+					<span class="location-text">Оберіть місцерозташування</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="35"
+						height="35"
+						viewBox="0 0 24 24"
+						class="location-icon"
+					>
+						<path d="M24 22h-24l12-20z"></path>
+					</svg>
+
+					<ul class="dropdown_menu dropdown_menu-5">
+						<li class="dropdown_item-1" onclick="goToPage('#')">Бакота</li>
+						<li
+							class="dropdown_item-2"
+							onclick="goToPage('./reservation.html')"
+						>
+							Карпати
+						</li>
+						<li class="dropdown_item-3" onclick="goToPage('#')">Київ</li>
+						<li class="dropdown_item-4" onclick="goToPage('#')">
+							Одеська область
+						</li>
+					</ul>
+				</div>
+
+				<section class="location-wrapper">
+					<div class="img-wrapper">
+						<img src="./img/image_5.png" alt="image-5" />
+					</div>
+					<div class="location-body">
+						<h2 class="location-title">Незвідана Бакота</h2>
+						<hr class="location-line" />
+						<div class="text-wrapper">
+							<p class="text">
+								У Хмельницькій області розташований загублений край - Бакота.
+								Мальовничий каньйон з давньою історією захоплює своїми
+								просторами та незвичною атмосферою. Бджільництво, свіжий мед із
+								польових трав, дотик до природи.
+							</p>
+						</div>
+						<div class="star-wrapper">
+							<span class="star"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="50"
+									height="50"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+									/></svg
+							></span>
+						</div>
+						<div class="btn-wrapper">
+							<button class="location-btn">Детальніше</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="location-wrapper">
+					<div class="img-wrapper">
+						<img src="./img/image_8.png" alt="image-8" />
+					</div>
+					<div class="location-body">
+						<h2 class="location-title">Полонини Карпат</h2>
+						<hr class="location-line" />
+						<div class="text-wrapper">
+							<p class="text">
+								Полонини Карпат, у селі Орів посеред гір розташувався затишний
+								куточок для незабутніх вражень. Справжні українські гори,
+								власноручне сироваріння на полонині, водоспади та вікові дерева
+								чекають на Вас.
+							</p>
+						</div>
+						<div class="star-wrapper">
+							<span class="star"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="50"
+									height="50"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+									/></svg
+							></span>
+						</div>
+						<div class="btn-wrapper">
+							<button
+								class="location-btn"
+								onclick="goToPage('./reservation.html')"
+							>
+								Детальніше
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="location-wrapper">
+					<div class="img-wrapper">
+						<img src="./img/image_6.png" alt="image-6" />
+					</div>
+					<div class="location-body">
+						<h2 class="location-title">Автентична Київщина</h2>
+						<hr class="location-line" />
+						<div class="text-wrapper">
+							<p class="text">
+								Неподалік центра Києва розташувалось автентичне українське село
+								на території однойменного села Пирогово. Дерев’яні млини,
+								запашний хліб, приготовлений своїми руками, українські пісні та
+								багато іншого чекає на вас уже зараз.
+							</p>
+						</div>
+						<div class="star-wrapper">
+							<span class="star"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="50"
+									height="50"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+									/></svg
+							></span>
+						</div>
+						<div class="btn-wrapper">
+							<button class="location-btn">Детальніше</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="location-wrapper">
+					<div class="img-wrapper">
+						<img src="./img/image_7.png" alt="image-7" />
+					</div>
+					<div class="location-body">
+						<h2 class="location-title">Нетипова Одещина</h2>
+						<hr class="location-line" />
+						<div class="text-wrapper">
+							<p class="text">
+								В Одеській області знаходиться мальовниче містечко Вилкове. Його
+								ще називають «українською Венецією». Вилкове - це містечко на
+								воді, весь в каналах. Розташоване в місці, де зустрічаються
+								річка Дунай і Чорне море. Люди пересуваються переважно човнами.
+								Нетипове українське село не залишить Вас без вражень.
+							</p>
+						</div>
+						<div class="star-wrapper">
+							<span class="star"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="50"
+									height="50"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+									/></svg
+							></span>
+						</div>
+						<div class="btn-wrapper">
+							<button class="location-btn">Детальніше</button>
+						</div>
+					</div>
+				</section>
+				<div class="scroll-to-top" onclick="scrollToTop()">
+					<img
+						src="./img/top_arrow.png"
+						alt="Top Arrow"
+						class="scroll-to-top-btn"
+					/>
+				</div>
+			</main>
+
+			<footer class="footer">
+				&copy; 2021 HolidayTime. All rights reserved.
+			</footer>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

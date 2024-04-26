@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/site.webmanifest" />
+		<title>HolidayTime</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="./img/logo.png" alt="Logo" class="logo" />
+				<div>
+					<nav class="nav">
+						<div class="nav-links">
+							<ul class="nav-items">
+								<li class="nav-item"><a href="./">ГОЛОВНА</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./about.html">ПРО НАС</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./reserve.html">ЗАБРОНЮВАТИ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./contacts.html">КОНТАКТИ</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./profile.html">ОСОБИСТИЙ<br />КАБІНЕТ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="language-switcher dropdown dropdown-5">
+						<img
+							src="./img/globe.png"
+							alt="Language Icon"
+							class="language-icon"
+						/>
+						<span class="language-text">UA</span>
+						<ul class="dropdown_menu dropdown_menu-5">
+							<li class="dropdown_item-1 active">UA</li>
+							<li class="dropdown_item-2">RU</li>
+							<li class="dropdown_item-3">EN</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<h1 class="page-title">Особистий кабінет</h1>
+			<main class="main-content">
+				<div class="profile-container">
+					<div class="profile-wrapper">
+						<section class="profile-image-section">
+							<div class="profile-image-container">
+								<img
+									src="./img/avatar.png"
+									id="img-preview"
+									alt="User profile avatar"
+									class="profile-image"
+								/>
+								<div class="change-avatar-container">
+									<label for="change-avatar-input" class="change-avatar-button">
+										Змінити аватар
+									</label>
+									<input
+										id="change-avatar-input"
+										class="change-avatar-inp"
+										name="change-avatar-input"
+										type="file"
+										accept="image/*"
+										onchange="readURL(this)"
+									/>
+								</div>
+								<div class="settings-container">
+									<button class="settings-button">Налаштування</button>
+								</div>
+							</div>
+						</section>
+						<section class="profile-details-section">
+							<div class="profile-details-container">
+								<h1 class="profile-name">Петров Іван Іванович</h1>
+								<hr class="profile-divider" />
+								<p class="profile-gender">
+									<span style="font-weight: 700; font-style: italic"
+										>Стать:</span
+									>
+									<span style="font-style: italic">чоловіча</span>
+								</p>
+								<hr class="profile-divider" />
+								<p class="profile-dob">
+									<span style="font-weight: 700; font-style: italic">
+										Дата народження:
+									</span>
+									<span style="font-style: italic">10. 02. 1998</span>
+								</p>
+								<hr class="profile-divider" />
+								<p class="profile-phone">
+									Мобільний телефон:
+									<span style="font-weight: 400">+38(097)346-72-50</span>
+								</p>
+								<hr class="profile-divider" />
+								<p class="profile-email">
+									Ел. пошта:
+									<span style="font-weight: 400">petrov@gmail.com</span>
+								</p>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="scroll-to-top" onclick="scrollToTop()">
+					<img
+						src="./img/top_arrow.png"
+						alt="Top Arrow"
+						class="scroll-to-top-btn"
+					/>
+				</div>
+			</main>
+
+			<footer class="footer">
+				&copy; 2021 HolidayTime. All rights reserved.
+			</footer>
+		</div>
+
+		<script src="./js/script.js"></script>
+		<script src="./js/profile.js"></script>
+	</body>
+</html>

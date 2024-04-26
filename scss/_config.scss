@@ -1,0 +1,22 @@
+$white: #fff;
+$black: #323236;
+$gray-dark: #414141;
+$gray-light: #90a4ae;
+$gray-lighter: #eeecf1;
+$blue-dark: #202846;
+$blue-light: #dcdcdc;
+$blue-lighter: #f2eeee;
+$blue-lightest: #444765;
+
+$font-primary: 'PT Sans', sans-serif;
+$background-primary: $blue-light;
+$background-secondary: $blue-dark;
+$text-primary: $white;
+$text-secondary: $gray-light;
+
+@mixin flex($vertical, $horizontal, $direction) {
+	display: flex;
+	justify-content: $vertical;
+	align-items: $horizontal;
+	flex-direction: $direction;
+}

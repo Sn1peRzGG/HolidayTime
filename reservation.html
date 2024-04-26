@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/site.webmanifest" />
+		<title>HolidayTime</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="./img/logo.png" alt="Logo" class="logo" />
+				<div>
+					<nav class="nav">
+						<div class="nav-links">
+							<ul class="nav-items">
+								<li class="nav-item"><a href="./">ГОЛОВНА</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./about.html">ПРО НАС</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./reserve.html">ЗАБРОНЮВАТИ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item"><a href="./contacts.html">КОНТАКТИ</a></li>
+								<li class="nav-divider" aria-hidden="true"></li>
+								<li class="nav-item">
+									<a href="./profile.html">ОСОБИСТИЙ<br />КАБІНЕТ</a>
+								</li>
+								<li class="nav-divider" aria-hidden="true"></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="language-switcher dropdown dropdown-5">
+						<img
+							src="./img/globe.png"
+							alt="Language Icon"
+							class="language-icon"
+						/>
+						<span class="language-text">UA</span>
+						<ul class="dropdown_menu dropdown_menu-5">
+							<li class="dropdown_item-1 active">UA</li>
+							<li class="dropdown_item-2">RU</li>
+							<li class="dropdown_item-3">EN</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<h1 class="page-title">Бронювання будиночка в Карпатах</h1>
+			<main class="main-content">
+				<div class="container">
+					<div class="back-btn-wrapper">
+						<button class="back-btn" onclick="goBack()">
+							<span class="btn-arrow"
+								><svg
+									fill="#fff"
+									height="36px"
+									width="36px"
+									version="1.1"
+									id="Layer_1"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									viewBox="0 0 330.00 330.00"
+									xml:space="preserve"
+									transform="matrix(1, 0, 0, 1, 0, 0)rotate(90)"
+								>
+									<g id="SVGRepo_bgCarrier" stroke-width="0">
+										<path
+											id="XMLID_29_"
+											d="M100.606,100.606L150,51.212V315c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V51.212l49.394,49.394 C232.322,103.535,236.161,105,240,105c3.839,0,7.678-1.465,10.606-4.394c5.858-5.857,5.858-15.355,0-21.213l-75-75 c-5.857-5.858-15.355-5.858-21.213,0l-75,75c-5.858,5.857-5.858,15.355,0,21.213C85.251,106.463,94.749,106.463,100.606,100.606z"
+										></path>
+									</g></svg></span
+							>Назад
+						</button>
+					</div>
+
+					<div class="info-wrapper">
+						<div class="div1">
+							<img src="./img/image_4.png" alt="Image-4" />
+						</div>
+						<div class="div2">
+							<img src="./img/image_11.png" alt="Image-11" />
+						</div>
+						<div class="div3">
+							<img src="./img/image_9.png" alt="Image-9" />
+						</div>
+						<div class="div4">
+							<img src="./img/image_10.png" alt="Image-10" />
+						</div>
+						<div class="div5">
+							<img src="./img/image_12.png" alt="Image-12" />
+						</div>
+					</div>
+
+					<div class="title-medium">Наявність місць</div>
+
+					<section class="booking-section">
+						<h2 class="booking-title">
+							Коли б Ви хотіли зупинись в помешканні Полонини Карпат?
+						</h2>
+						<div class="booking-container">
+							<form class="booking-form">
+								<div class="booking-details">
+									<div class="booking-row">
+										<div class="check-in-field check-field">
+											<label for="check-in-date" class="check-in-label">
+												Дата заїзду
+											</label>
+											<div class="check-in-input check-input">
+												<div class="check-in-date check-date">
+													<img
+														src="./img/calendar_icon.png"
+														alt="calendar-icon"
+														class="calendar-icon"
+													/>
+													<span
+														id="check-in-date"
+														class="check-in-text check-text"
+														>Дата заїзду</span
+													>
+												</div>
+												<input
+													type="date"
+													class="check-in-value check-value"
+													id="check-in-date"
+												/>
+											</div>
+										</div>
+
+										<div
+											class="check-out-field check-field"
+											style="margin-left: 100px"
+										>
+											<label for="check-out-date" class="check-out-label">
+												Дата виїзду
+											</label>
+											<div class="check-out-input check-input">
+												<div class="check-out-date check-date">
+													<img
+														src="./img/calendar_icon.png"
+														alt="calendar-icon"
+														class="calendar-icon"
+													/>
+													<span
+														id="check-out-date"
+														class="check-out-text check-text"
+														>Дата виїзду</span
+													>
+												</div>
+												<input
+													type="date"
+													class="check-out-value check-value"
+													id="check-out-date"
+												/>
+											</div>
+										</div>
+
+										<div class="booking-btn-wrapper">
+											<button class="booking-btn">
+												Перевірити наявність вільних місць
+											</button>
+										</div>
+									</div>
+
+									<div class="booking-row row-2">
+										<div class="row-section">
+											<label
+												for="numbers"
+												class="title"
+												style="font-size: 29px; margin-right: 15px"
+											>
+												Номери
+											</label>
+											<input
+												type="number"
+												name="numbers"
+												value="1"
+												min="0"
+												max="100"
+												step="1"
+												class="input-number"
+												id="numbers"
+												style="
+													width: 60px;
+													height: 60px;
+													font-size: 36px;
+													border: 2px solid #90a4ae;
+													padding-left: 17px;
+												"
+											/>
+										</div>
+										<div class="row-section">
+											<label
+												for="adults"
+												class="title"
+												style="font-size: 29px; margin-right: 15px"
+											>
+												Дорослі
+											</label>
+											<input
+												type="number"
+												name="adults"
+												value="2"
+												min="0"
+												max="100"
+												step="1"
+												class="input-number"
+												id="adults"
+												style="
+													width: 60px;
+													height: 60px;
+													font-size: 36px;
+													border: 2px solid #90a4ae;
+													padding-left: 17px;
+												"
+											/>
+										</div>
+										<div class="row-section">
+											<label
+												for="children"
+												class="title"
+												style="font-size: 29px; margin-right: 15px"
+											>
+												Діти
+											</label>
+											<input
+												type="number"
+												name="children"
+												value="0"
+												min="0"
+												max="100"
+												step="1"
+												class="input-number"
+												id="children"
+												style="
+													width: 60px;
+													height: 60px;
+													font-size: 36px;
+													border: 2px solid #90a4ae;
+													padding-left: 17px;
+												"
+											/>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</section>
+
+					<section class="room-type-container">
+						<header class="room-details-header">
+							<div class="room-details-container">
+								<h3
+									class="room-details-label"
+									style="width: 240px; margin-left: -60px"
+								>
+									Вміщує
+								</h3>
+								<h3
+									class="room-type-label"
+									style="width: 845px; text-align: left"
+								>
+									Тип розміщення
+								</h3>
+							</div>
+							<h3 class="room-price-label" style="width: 400px">Ціна</h3>
+						</header>
+
+						<div class="room-info-container">
+							<div class="room-info-wrapper">
+								<img src="./img/person-fill.png" alt="" class="room-image" />
+								<div class="room-details-wrapper">
+									<div class="room-details">
+										<h4 class="room-name" style="text-align: left">
+											Двомісний номер
+										</h4>
+										<p class="room-bed-details">1 широке двоспальне ліжко</p>
+									</div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="103"
+										height="40"
+										viewBox="0 0 103 40"
+										fill="none"
+										class="room-info-icon"
+									>
+										<path
+											d="M14.9375 0.25C8.92297 0.25 3.96875 2.79063 3.96875 5.875V18.5875C1.73844 19.6225 0.3125 21.1038 0.3125 22.75V39.625H18.5938V35.875H84.4062V39.625H102.688V22.75C102.688 21.1038 101.262 19.6225 99.0312 18.5875V5.875C99.0312 2.79063 94.077 0.25 88.0625 0.25H14.9375ZM14.9375 4H88.0625C90.0917 4 91.7188 4.83437 91.7188 5.875V17.125H84.4062V15.25C84.4062 12.1656 79.452 9.625 73.4375 9.625H58.8125C56.0082 9.625 53.4488 10.1875 51.5 11.0875C49.5005 10.1518 46.8943 9.6306 44.1875 9.625H29.5625C23.548 9.625 18.5938 12.1656 18.5938 15.25V17.125H11.2812V5.875C11.2812 4.83437 12.9083 4 14.9375 4ZM29.5625 13.375H44.1875C46.2167 13.375 47.8438 14.2094 47.8438 15.25V17.125H25.9062V15.25C25.9062 14.2094 27.5333 13.375 29.5625 13.375ZM58.8125 13.375H73.4375C75.4667 13.375 77.0938 14.2094 77.0938 15.25V17.125H55.1562V15.25C55.1562 14.2094 56.7833 13.375 58.8125 13.375ZM11.2812 20.875H91.7188C93.748 20.875 95.375 21.7094 95.375 22.75V35.875H91.7188V32.125H11.2812V35.875H7.625V22.75C7.625 21.7094 9.25203 20.875 11.2812 20.875Z"
+											fill="black"
+										/>
+									</svg>
+								</div>
+							</div>
+							<button class="show-prices-button">Показати ціни</button>
+							<hr
+								style="
+									border: 1px outset;
+									background-color: #8f98b9;
+									color: #8f98b9;
+									height: 290px;
+									position: absolute;
+									top: 0;
+									left: 240px;
+									width: 3px;
+								"
+							/>
+							<hr
+								style="
+									border: 1px outset;
+									background-color: #8f98b9;
+									color: #8f98b9;
+									height: 290px;
+									position: absolute;
+									top: 0;
+									right: 400px;
+									width: 3px;
+								"
+							/>
+						</div>
+					</section>
+				</div>
+
+				<div class="scroll-to-top" onclick="scrollToTop()">
+					<img
+						src="./img/top_arrow.png"
+						alt="Top Arrow"
+						class="scroll-to-top-btn"
+					/>
+				</div>
+			</main>
+
+			<footer class="footer">
+				&copy; 2021 HolidayTime. All rights reserved.
+			</footer>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

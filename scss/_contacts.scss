@@ -1,0 +1,142 @@
+$color_1: #000;
+$background-color_1: #202846;
+.contact-info {
+	align-self: center;
+	margin-top: 72px;
+	width: 80%;
+	padding: 0 20px;
+	// @include flex(center, center, row);
+
+	.contact-row {
+		// gap: 135px;
+		@include flex(space-between, start, row);
+
+		.contact-col {
+			display: flex;
+			flex-direction: column;
+			line-height: normal;
+			width: 250px;
+			margin-left: 0px;
+
+			.contact-item {
+				display: flex;
+				flex-direction: column;
+				color: $color_1;
+				font-weight: 400;
+				white-space: nowrap;
+				text-align: center;
+
+				.contact-label {
+					align-self: start;
+					// margin-left: 13px;
+					font: 32px PT Sans, sans-serif;
+				}
+
+				.contact-value {
+					margin-top: 23px;
+					font: 30px PT Sans, sans-serif;
+				}
+			}
+		}
+	}
+}
+
+.label {
+	border-bottom: 3px solid $blue-dark;
+	width: 100%;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 32px;
+}
+
+.value {
+	margin-top: 10px !important;
+	font-size: 30px;
+}
+
+.contact-hours {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	color: $color_1;
+	font-weight: 400;
+	text-align: center;
+
+	.contact-hours-label {
+		font: 32px PT Sans, sans-serif;
+	}
+
+	.contact-hours-value {
+		margin-top: 23px;
+		font: 30px PT Sans, sans-serif;
+	}
+}
+
+.contact-email {
+	display: flex;
+	flex-direction: column;
+	color: $color_1;
+	font-weight: 400;
+	text-align: center;
+
+	.contact-email-label {
+		align-self: start;
+		// margin-left: 10px;
+		font: 32px PT Sans, sans-serif;
+	}
+
+	.contact-email-underline {
+		border: 3px solid rgba(32, 40, 70, 1);
+		background-color: $background-color_1;
+		margin-top: 5px;
+		height: 3px;
+	}
+
+	.contact-email-value {
+		align-self: center;
+		margin-top: 23px;
+		font: 30px PT Sans, sans-serif;
+	}
+}
+
+.contact-address {
+	align-self: center;
+	margin-top: 55px;
+	width: 80%;
+
+	.contact-address-row {
+		// gap: 135px;
+		@include flex(space-between, center, row);
+
+		.contact-address-col {
+			display: flex;
+			margin-top: 36px;
+			flex-direction: column;
+			color: $color_1;
+			font-weight: 400;
+			text-align: center;
+			padding: 0 20px;
+
+			.contact-address-label {
+				align-self: start;
+				font: 32px PT Sans, sans-serif;
+			}
+
+			.contact-address-value {
+				margin-top: 21px;
+				font: 30px PT Sans, sans-serif;
+			}
+		}
+	}
+}
+
+.contact-map {
+	// aspect-ratio: 1.72;
+	object-fit: auto;
+	object-position: center;
+	// width: 575px;
+	height: 335px;
+	border: 3px solid rgba(0, 0, 0, 0.05);
+	flex-grow: 1;
+	border-radius: 40px;
+}
